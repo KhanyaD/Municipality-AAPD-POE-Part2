@@ -8,15 +8,12 @@
 **Student Number:** ST10364883
 **Submission:** POE Part 1
 
----
 
 ## 1. Project Overview
 
 Ubuntu Municipality is a Windows Forms application developed in C# using Microsoft Visual Studio. The application is designed to provide residents with an accessible platform for interacting with municipal services.
 
 For POE Part 1, the primary implemented functionality allows users to report municipal issues through the application. The interface was designed to be simple, professional and easy to navigate.
-
----
 
 ## 2. Purpose of the Application
 
@@ -29,8 +26,6 @@ The application is designed to eventually support:
 * Tracking the status of service requests.
 
 For Part 1, the **Report Issues** functionality is the main implemented feature.
-
----
 
 ## 3. Main Menu
 
@@ -46,11 +41,6 @@ The interface includes:
 
 For POE Part 1, the **Report Issues** option is functional. Features intended for later parts of the POE are not yet fully implemented.
 
-###Main Menu
-
-
----
-
 ## 4. Report Municipal Issue Functionality
 
 The Report Municipal Issue screen allows residents to capture information about a municipal problem.
@@ -65,10 +55,8 @@ The user can provide:
 
 The application also provides progress feedback while the user completes the report.
 
-### Screenshot – Report Municipal Issue Form
+### Report Municipal Issue Form
 
-
----
 
 ## 5. Issue Categories
 
@@ -87,17 +75,10 @@ Using predefined categories improves consistency and makes reported issues easie
 
 
 
----
-
 ## 6. Attaching Supporting Evidence
 
 Users can attach a supporting file when reporting an issue. This can be used to provide additional evidence relating to the municipal problem being reported.
 
-### Screenshot – Attachment Functionality
-
-**[INSERT ATTACHMENT SCREENSHOT HERE]**
-
----
 
 ## 7. Input and Progress Feedback
 
@@ -107,9 +88,6 @@ The progress functionality encourages the user to complete the required informat
 
  Progress Indicator
 
-
-
----
 
 ## 8.l Issue Submission
 
@@ -125,25 +103,7 @@ The application validates the relevant information and provides feedback to the 
 
 ## 9. Source Code Evidence
 
-The following screenshots demonstrate important sections of the C# source code used to implement the Ubuntu Municipality application.
-
-### Main Menu Source Code
-
-
-
-### Report Issue Form Source Code
-
-
-
-### Input and Progress Handling
-
-
-
-### Attachment Functionality
-
-
-
-### Submit Functionality
+demonstrate important sections of the C# source code used to implement the Ubuntu Municipality application.
 
 
 ## 10. Technologies Used
