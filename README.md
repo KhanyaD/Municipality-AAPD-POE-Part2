@@ -117,7 +117,6 @@ Details after automatic refresh	Mismatched event/details observed in earlier scr
 Revised source build and automated checks	Not yet run on Windows	Pending	Capture build/check output
 21 GitHub Repository and Project Files
 
-The Part 1 README identifies https://github.com/KhanyaD/Municipality-AAPD-POE-Part1. Confirm the link or branch containing the final Part 2 source and record it before submission. Do not assume that the Part 1 repository already contains the changes.
 Package this README, all evidence images, the complete Visual Studio solution and project files, and the Validation folder if included in the final project. The previously supplied Part 2 ZIP is incomplete and must be recreated from the complete source folder. Extract the final ZIP to a new folder and verify that its solution opens and builds.
 22 Conclusion
 POE Part 2 introduces browsing, filtering and personalised recommendations for local events and announcements. The supplied screenshots demonstrate the principal search and history features. Final submission readiness depends on confirming the revised build, retesting selection handling, updating the evidence and repository link, and validating the complete submission ZIP.
