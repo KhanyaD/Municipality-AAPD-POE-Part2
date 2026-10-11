@@ -1,11 +1,19 @@
 UBUNTU MUNICIPALITY
+
 POE Part 2 README
+
 Module: Application Development
+
 Project: Ubuntu Municipality Municipal Services Application
+
 Student Name: Kukhanya Dlanjwa
+
 Student Number: ST10364883
+
 Submission: POE Part 2
+
 GitHub Repository
+
  Part 2 repository: https://github.com/KhanyaD/Municipality-AAPD-POE-Part2
 
 The repository link for the revised Part 2 source must be confirmed before submission.
