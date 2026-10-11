@@ -1,4 +1,4 @@
-# Ubuntu Municipality — AAPD Part 2
+# Ubuntu Municipality  AAPD Part 2
 Student: Kukhanya Dlanjwa | ST10364883
 
 ## Open, compile and run
