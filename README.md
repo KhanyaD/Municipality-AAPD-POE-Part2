@@ -14,7 +14,7 @@ Submission: POE Part 2
 
 GitHub Repository
 
- Part 2 repository: https://github.com/KhanyaD/Municipality-AAPD-POE-Part2.
+ Part 2 repository: https://github.com/KhanyaD/Municipality-AAPD-POE-Part2
 
 The repository link for the revised Part 2 source must be confirmed before submission.
 1 Project Overview
