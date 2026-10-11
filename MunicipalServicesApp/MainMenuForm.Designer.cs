@@ -211,7 +211,7 @@ namespace MunicipalServicesApp
 
             // Date
             lblDate.Text =
-                "18 August 2026";
+                System.DateTime.Now.ToString("dd MMMM yyyy");
 
             lblDate.Font =
                 new Font("Segoe UI", 11F, FontStyle.Bold);
@@ -230,7 +230,7 @@ namespace MunicipalServicesApp
 
             // Day
             lblDay.Text =
-                "Tuesday";
+                System.DateTime.Now.ToString("dddd");
 
             lblDay.Font =
                 new Font("Segoe UI", 10F);

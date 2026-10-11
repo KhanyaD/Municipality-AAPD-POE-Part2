@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Windows.Forms;
 
 namespace MunicipalServicesApp
@@ -44,24 +44,23 @@ namespace MunicipalServicesApp
 
         // ============================================================
         // LOCAL EVENTS AND ANNOUNCEMENTS
-        // PART 2 - NOT ACTIVE YET
+        // PART 2 - ACTIVE
         // ============================================================
 
         private void btnLocalEventsAnnouncements_Click(
             object sender,
             EventArgs e)
         {
-            MessageBox.Show(
-                "Local Events and Announcements will be available soon.",
-                "Ubuntu Municipality",
-                MessageBoxButtons.OK,
-                MessageBoxIcon.Information);
+            using (var eventsForm = new LocalEventsForm())
+            {
+                eventsForm.ShowDialog(this);
+            }
         }
 
 
         // ============================================================
         // SERVICE REQUEST STATUS
-        // PART 2 - NOT ACTIVE YET
+        // PART 3 - NOT ACTIVE YET
         // ============================================================
 
         private void btnServiceRequestStatus_Click(
@@ -83,7 +82,8 @@ namespace MunicipalServicesApp
 
         private void MainMenuForm_Load(object sender, EventArgs e)
         {
-            // Nothing required here for Part 1.
+            lblDate.Text = DateTime.Now.ToString("dd MMMM yyyy");
+            lblDay.Text = DateTime.Now.ToString("dddd");
         }
     }
 }

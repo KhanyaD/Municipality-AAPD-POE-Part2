@@ -1,283 +1,70 @@
-﻿# Municipal Services South Africa Application
-
-## AAPD7112/w – Programming 3B
-### Part 1: Municipal Services Application
-
-**Student:** Kukhanya Dlanjwa  
-**Student Number:** ST10364883
-
----
-
-## 1. Project Overview
-
-The Municipal Services South Africa Application is a Windows Forms
-desktop application developed in C#.
-
-The application is designed to provide South African citizens with a
-simple interface for interacting with municipal services.
-
-Part 1 of the application focuses on allowing citizens to report
-municipal service-delivery issues.
-
-The main menu contains the following options:
-
-- Report Issues
-- Local Events and Announcements
-- Service Request Status
-
-For Part 1, the Report Issues functionality is implemented.
-The Local Events and Announcements and Service Request Status
-features are reserved for later development.
-
----
-
-## 2. Technologies Used
-
-The application was developed using:
-
-- C#
-- Windows Forms (WinForms)
-- Microsoft Visual Studio
-- .NET
-- Object-Oriented Programming principles
-- Generic List data structure
-
----
-
-## 3. Application Features
-
-### Main Menu
-
-When the application starts, the user is presented with the
-Municipal Services South Africa main menu.
-
-The main menu provides access to the Report Issues feature and
-displays the current date.
-
-### Report Municipal Issue
-
-The Report Issues feature allows a citizen to provide:
-
-- Location of the municipal issue
-- Issue category
-- Description of the issue
-- Optional supporting image or document
-
-Available issue categories include:
-
-- Roads and Potholes
-- Water and Sanitation
-- Electricity
-- Waste Management
-- Street Lights
-- Other
-
----
-
-## 4. File Attachments
-
-Users can attach supporting evidence to a municipal report.
-
-The application uses an OpenFileDialog to allow the user to select
-files from their computer.
-
-Supported files include:
-
-- JPG
-- JPEG
-- PNG
-- PDF
-- DOC
-- DOCX
-
-The selected filename is displayed on the Report Municipal Issue form.
-
----
-
-## 5. User Engagement Strategy
-
-The application implements Progress-Based Feedback and Positive
-Reinforcement as its primary user engagement strategy.
-
-A progress bar provides visual feedback while the citizen completes
-the report.
-
-Progress increases as the user:
-
-1. Enters a location
-2. Selects an issue category
-3. Provides a description
-4. Attaches supporting evidence
-
-Each completed section contributes 25% toward the progress indicator.
-
-The application also displays encouraging messages such as:
-
-- "Great start! Keep going."
-- "You are halfway there!"
-- "Almost finished!"
-- "Ready to submit your report!"
-
-This provides immediate feedback and encourages users to complete
-the reporting process.
-
----
-
-## 6. Data Structure
-
-Submitted municipal reports are represented by the ReportedIssue
-class.
-
-Each reported issue contains:
-
-- Location
-- Category
-- Description
-- Attachment path
-- Date reported
-- Reference number
-
-Submitted reports are stored in:
-
-List<ReportedIssue>
-
-The IssueRepository class provides access to the collection of
-reported municipal issues while the application is running.
-
----
-
-## 7. Reference Numbers
-
-When a municipal issue is successfully submitted, the application
-generates a reference number.
-
-Example:
-
-MUN-20260817135018
-
-The reference number is displayed to the citizen as part of the
-successful submission confirmation.
-
----
-
-## 8. Validation
-
-Before a report can be submitted, the application validates the
-required information.
-
-The following fields are required:
-
-- Location
-- Category
-- Description
-
-If required information is missing, the application displays a
-warning message and asks the user to complete the relevant field.
-
-The supporting attachment is optional.
-
----
-
-## 9. How to Compile the Application
-
-1. Open the MunicipalServicesApp solution in Microsoft Visual Studio.
-2. Allow Visual Studio to load the project completely.
-3. Select **Build** from the Visual Studio menu.
-4. Select **Build Solution**.
-
-Alternatively, press:
-
-Ctrl + Shift + B
-
-5. Confirm that Visual Studio reports that the build succeeded with
-no compilation errors.
-
----
-
-## 10. How to Run the Application
-
-1. Open the project in Microsoft Visual Studio.
-2. Build the solution.
-3. Press **F5** or select the **Start** button.
-4. The Municipal Services South Africa main menu will open.
-5. Select **Report Issues** to open the Report Municipal Issue form.
-
----
-
-## 11. How to Report a Municipal Issue
-
-1. Launch the application.
-2. Click **Report Issues**.
-3. Enter the location of the municipal issue.
-4. Select the appropriate issue category.
-5. Enter a description of the issue.
-6. Optionally click **Attach File** to attach supporting evidence.
-7. Observe the progress indicator as the report is completed.
-8. Click **Submit Report**.
-9. The application validates the information.
-10. A successful submission message and municipal reference number
-    are displayed.
-11. Click **OK** to complete the submission.
-
-The form is then cleared and is ready for another municipal report.
-
----
-
-## 12. Navigation
-
-The **Back** button on the Report Municipal Issue form returns the
-user to the main menu.
-
-The application uses separate Windows Forms for the main menu and
-municipal issue reporting interface.
-
----
-
-## 13. Project Structure
-
-Important project files include:
-
-- MainMenuForm.cs
-  Handles the application's main menu and navigation.
-
-- ReportIssueForm.cs
-  Handles municipal issue reporting, validation, attachments,
-  progress feedback and report submission.
-
-- ReportedIssue.cs
-  Defines the structure of a municipal issue.
-
-- IssueRepository.cs
-  Stores submitted issues using a List<ReportedIssue> collection.
-
-- Program.cs
-  Contains the application startup configuration.
-
----
-
-## 14. Current Scope
-
-This version represents Part 1 of the Municipal Services Application.
-
-The following feature is currently implemented:
-
-- Report Issues
-
-The following main-menu features are reserved for subsequent parts
-of the project:
-
-- Local Events and Announcements
-- Service Request Status
-
----
-
-## 15. Conclusion
-
-The Municipal Services South Africa Application provides citizens
-with a straightforward way to report municipal service-delivery
-problems.
-
-The application combines input validation, file attachments,
-appropriate data structures, confirmation messages, reference
-numbers and progress-based user engagement to provide a clear and
-user-friendly reporting experience.
+# Ubuntu Municipality — AAPD Part 2
+Student: Kukhanya Dlanjwa | ST10364883
+
+## Open, compile and run
+1. Extract this ZIP into a normal folder on your Windows PC. Do not run from inside the ZIP.
+2. In Visual Studio 2022, install the .NET desktop development workload and the .NET Framework 4.8 targeting/developer pack.
+3. Open UbuntuMunicipality/MunicipalServicesApp.sln.
+4. Select Debug and Any CPU. Right-click MunicipalServicesApp and choose Set as Startup Project.
+5. Choose Build > Rebuild Solution (Ctrl+Shift+B). Resolve any errors before submission.
+6. Press F5 to run. No database, internet connection or NuGet dependencies are needed.
+
+## Using the application
+Report Issues retains the Part 1 location, category, description, optional attachment, emergency flag and progress feedback. My Reports displays submitted issues during the current application session.
+
+Click Local Events and Announcements on the main menu. Upcoming sample events and announcements display in chronological order. Select an item to read its location and description. Search a keyword (title, description, category or location), choose a category, and optionally tick Filter dates and select a start and end date. Dates are inclusive. Click Search or press Enter in the keyword box. Invalid date ranges show a warning; no matches show a clear message. Reset filters restores all upcoming items without clearing preferences.
+
+Recommended for you updates after each meaningful search. Select a recommendation to read its details. Recent searches display newest first. Select a search and click Apply selected (or double-click it) to restore its filters. Clear history removes search preferences and recommendations. Back to Main Menu returns to the dashboard. Service Request Status remains a Part 3 placeholder.
+
+The events are fictional demonstration records, not verified municipality announcements. Their dates are generated relative to the day the service first loads. Reports, event data and search history are in memory and reset when the application exits. No attachments are uploaded.
+
+## Data structures and recommendation algorithm
+- SortedDictionary<DateTime, List<MunicipalEvent>>: chronological event buckets. A list per date retains multiple items on the same day.
+- Dictionary<int, MunicipalEvent>: direct ID lookup for event and recommendation details.
+- HashSet<string>: unique categories for the category dropdown; unique explanation phrases in recommendations.
+- Stack<EventSearch>: most recent search first, retaining the latest 20 meaningful searches. Reopening the events form keeps history for the application session.
+- Recommendations scan the retained searches. Each matching category adds 5 points, matching keyword adds 3, and matching inclusive date range adds 2. Repeated searches increase the weight of recurring preferences. Positive scores are ranked descending, then by soonest date and ID; up to five suggestions display. The initial screen invites a search rather than claiming personalised suggestions without any history.
+
+Stacks, dictionary structures and sets are actively used, as required by the brief's alternatives. This .NET Framework 4.8 project does not depend on the newer built-in PriorityQueue type.
+
+## Source guide
+- MainMenuForm.cs: navigation and today's date.
+- LocalEventsForm.cs: events interface, filters, details, history and recommendation display; built in code rather than a Designer file.
+- Events/MunicipalEvent.cs: event, search and recommendation models.
+- Events/EventService.cs: demonstration data, indexes, search history and scoring algorithm.
+- Existing ReportIssueForm, MyReportsForm and issue model/repository: Part 1 functionality.
+- Evidence/MainMenu.png: main-menu screenshot supplied by the student.
+
+## Verification status and checks
+Verification completed on 8 October 2026:
+- The .NET Framework 4.8 solution built successfully with 0 warnings and 0 errors.
+- All 16 automated event-service checks passed.
+- Windows Forms smoke tests successfully constructed MainMenuForm, ReportIssueForm, MyReportsForm and LocalEventsForm.
+- Tests through the Local Events form passed: Sport category search returned two items; an inclusive single-date search retained both same-day items; Reset filters restored all 12 sample items.
+- The student confirmed completion of visual checks and supplied the main-menu screenshot in Evidence/MainMenu.png. That screenshot documents the main menu; it does not independently establish the appearance of every other screen.
+
+The tests above validate compilation, service logic and selected form behaviour. The manual checklist below is retained for repeat testing and is not a record of individually observed passes.
+
+For optional automated event-service checks, open Command Prompt in this extracted folder and run Validation\RunChecks.cmd. It compiles and runs checks for chronological sorting, duplicate-date records, inclusive date bounds, combined filters, no results, category/keyword/date recommendations, repeated-search ranking, history limits, invalid ranges and clearing history. It exits with a nonzero code if compilation or a check fails. These checks do not replace the Visual Studio application build or UI checks.
+
+Optional repeat checks on Windows:
+1. Rebuild successfully and launch the app. Confirm today's date and working Report Issues navigation.
+2. Open events; verify upcoming events and announcements, chronological dates and selected-item details.
+3. Search Sport: only Sport items should appear; recommendations should show Sport matches.
+4. Search Education twice: Education items should rank above the earlier Sport preferences.
+5. Reset filters: all upcoming items return, with recommendations retained.
+6. Filter the single date seven days from today: both the arts market and recycling notice should appear (when tested on the initial load day).
+7. Search a nonexistent keyword: a no-matches message should appear.
+8. Set From after To: a warning should appear without changing results/history.
+9. Apply a recent search: filters/results restore without duplicating history.
+10. Clear history: history empties and recommendations invite a new search.
+11. Close/reopen events: retained searches persist until the app exits. Restarting the app clears session data.
+12. Resize the events window and check navigation, grids and filters remain usable.
+
+## Submission contents
+This Part 2 package contains the complete application source, solution/project files, this README, automated event-service checks and the supplied main-menu screenshot. Generated .vs, bin and obj folders are excluded. Open the solution and rebuild to generate the executable.
+
+The required Part 2 deliverables are source code and a README explaining compilation, running and use. A new research report is not required for Part 2. Service Request Status is reserved for Part 3. Retain a copy of this source for the final POE.
+
+## Known limitations
+Reports and preferences persist only for the current session. Report reference numbers use a timestamp to the nearest second, so rapid submissions can share a reference. The Report Issues progress bar includes the optional attachment in its percentage, so the three mandatory fields alone show 75 percent. These existing behaviours were identified during review; this submission packaging does not change application code.

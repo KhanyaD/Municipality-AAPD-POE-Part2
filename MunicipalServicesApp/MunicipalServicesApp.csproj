@@ -46,7 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CodeFile1.cs" />
+    <Compile Include="Events\MunicipalEvent.cs" />
+    <Compile Include="Events\EventService.cs" />
+    <Compile Include="LocalEventsForm.cs"><SubType>Form</SubType></Compile>
     <Compile Include="IssueRepository.cs" />
     <Compile Include="MainMenuForm.cs">
       <SubType>Form</SubType>
