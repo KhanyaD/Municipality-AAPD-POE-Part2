@@ -196,12 +196,6 @@ Recreated from the submitted project source code.
 
 
 
-
-
-
-
-
-
 22 GitHub Repository and Project Files
 The Part 1 README identifies https://github.com/KhanyaD/Municipality-AAPD-POE-Part1. Confirm the link or branch containing the final Part 2 source and record it before submission. Not assuming that the Part 1 repository already contains the changes.
 Package this README, all evidence images, the complete Visual Studio solution and project files, and the Validation folder if included in the final project. The previously supplied Part 2 ZIP is incomplete and must be recreated from the complete source folder. Extract the final ZIP to a new folder and verify that its solution opens and builds.
