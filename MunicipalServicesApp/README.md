@@ -66,6 +66,7 @@ Water maintenance notice is selected in the upcoming list. Its details match the
 
  14 Selected recommendation details
 Digital skills workshop is selected in the recommendation list. Details match 11 October 2026, Education and Community library. Both grids were selected in this pre-fix image; the updated code clears the other grid’s highlight.
+
  
 15 Data Structures and Recommendation Algorithm
 SortedDictionary<DateTime, List<MunicipalEvent>>: chronological event buckets. A list per date retains multiple items on the same day.
